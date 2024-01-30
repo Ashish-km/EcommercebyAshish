@@ -1,0 +1,163 @@
+{
+  "user": [
+    {
+      "name": "Ashish Mishra",
+      "mobNumber": "1234567891",
+      "age": 29,
+      "dob": "1995-05-12",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "address": {
+        "id": 0,
+        "addline1": "District Center",
+        "addline2": "Janakpuri",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "zipCode": "110052"
+      },
+      "language": [
+        "Hindi"
+      ],
+      "gender": "Male",
+      "aboutYou": "I am a programmer...",
+      "uploadPhoto": "ashish.png",
+      "agreetc": true,
+      "role": "admin",
+      "id": "1"
+    },
+    {
+      "id": "ffcb",
+      "aboutYou": "qwe q qweqweqw  ",
+      "age": 12,
+      "agreetc": true,
+      "dob": "2024-01-19",
+      "email": "ashishkushwah888@gmail.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "city": "indore",
+        "state": "...",
+        "zipCode": "453001"
+      },
+      "language": [ 
+        "Hindi"
+      ],
+      "mobNumber": "+916263383827",
+      "name": "Ashish Kushwah",
+      "password": "123456",
+      "uploadPhoto": "C:\\fakepath\\Screenshot 2024-01-25 234844.png",
+      "role": "seller"
+    },
+    {
+      "id": "33ab",
+      "aboutYou": "hgjkasgdkj asshdjkgajskdhk\n",
+      "age": 12,
+      "agreetc": true,
+      "dob": "2002-05-04",
+      "email": "shivani@gmail.com",
+      "gender": "Female",
+      "address": {
+        "id": 0,
+        "city": "betma ",
+        "state": "...",
+        "zipCode": "4646464"
+      },
+      "language": [
+        "English"
+      ],
+      "mobNumber": "64645646",
+      "name": "shivani",
+      "password": "564564a",
+      "uploadPhoto": "C:\\fakepath\\Screenshot 2024-01-25 164653.png",
+      "role": "buyer"
+    }
+  ],
+  "product": [
+    {
+      "id": "13",
+      "name": "TIZUM Aluminium Portable Stand",
+      "uploadPhoto": "https://rukminimi.flixcart.com/image/832/832/jx@prbk0/mobile-holder",
+      "productDesc": "The aluminium material used in the stand makes it sturdy and strong.",
+      "mrp": 300,
+      "dp": 199,
+      "status": "draft"
+    },
+    {
+      "id": "14",
+      "name": "Adjustable Laptop Stand",
+      "uploadPhoto": "https://example.com/image/laptop-stand",
+      "productDesc": "Ergonomically designed adjustable laptop stand for comfortable usage.",
+      "mrp": 500,
+      "dp": 399,
+      "status": "inactive"
+    },
+    {
+      "id": "15",
+      "name": "Wireless Charging Pad",
+      "uploadPhoto": "https://example.com/image/wireless-charging-pad",
+      "productDesc": "Qi-compatible wireless charging pad for convenient device charging.",
+      "mrp": 250,
+      "dp": 199,
+      "status": "publish"
+    },
+    {
+      "id": "16",
+      "name": "Bluetooth Earbuds",
+      "uploadPhoto": "https://example.com/image/bluetooth-earbuds",
+      "productDesc": "High-quality wireless Bluetooth earbuds with noise cancellation feature.",
+      "mrp": 120,
+      "dp": 99,
+      "status": "active"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": "1",
+        "name": "Polyester Door Curtain",
+        "uploadPhoto": "https://rukminiml.flixcart.com/image/832/832/jcf487k0/curtain/w/c",
+        "productDesc": "Transform the ambiance of your home with these elegant, crushed curtains.",
+        "mrp": 1000,
+        "dp": 499,
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560037"
+      },
+      "contact": "09040398006",
+      "dateTime": "18/07/2019"
+    },
+    {
+      "id": "2",
+      "userId": 4,
+      "sellerId": 1,
+      "product": {
+        "id": "2",
+        "name": "Stainless Steel Water Bottle",
+        "uploadPhoto": "https://example.com/image/water-bottle",
+        "productDesc": "Durable stainless steel water bottle for everyday use.",
+        "mrp": 500,
+        "dp": 299,
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 1,
+        "addLine1": "JP Nagar",
+        "addLine2": "Phase 5",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560078"
+      },
+      "contact": "08098765432",
+      "dateTime": "20/07/2019"
+    }
+  ]
+}
