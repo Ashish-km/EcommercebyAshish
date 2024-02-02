@@ -1,6 +1,7 @@
 {
   "user": [
     {
+      "id":"1",
       "name": "Ashish Mishra",
       "mobNumber": "1234567891",
       "age": 29,
@@ -22,8 +23,7 @@
       "aboutYou": "I am a programmer...",
       "uploadPhoto": "ashish.png",
       "agreetc": true,
-      "role": "admin",
-      "id": "1"
+      "role": "admin"
     },
     {
       "id": "ffcb",
@@ -67,7 +67,7 @@
       ],
       "mobNumber": "64645646",
       "name": "shivani",
-      "password": "564564a",
+      "password": "1234567",
       "uploadPhoto": "C:\\fakepath\\Screenshot 2024-01-25 164653.png",
       "role": "buyer"
     }

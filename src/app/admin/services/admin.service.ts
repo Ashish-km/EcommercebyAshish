@@ -11,7 +11,7 @@ export class AdminService {
   public all_user="http://localhost:3000/user/";
   
   constructor(private apiService:ApiService) { }
-  userDashbordData(){
+  userDashboardData(){
     return this.apiService.get(this.user_url);
   }
    productDashbordData(){

@@ -22,9 +22,10 @@ export class AdminLoginComponent implements OnInit {
   onSubmitSignIn() {
     this.loginService.adminLogin(this.signInFormValue.userEmail, this.signInFormValue.userPassword).subscribe(data => {
       this.user_data = data;
-      if (this.user_data.legnth = 1) {
-        sessionStorage.setItem('user_Session_id', this.user_data[0].id);
+      if (this.user_data.length == 1) {
+        sessionStorage.setItem('user_session_id', this.user_data[0].id);
         sessionStorage.setItem("role", this.user_data[0].role);
+        console.log("userdata-->", this.user_data);
         this.router.navigateByUrl('/admin-dashboard');
       }
       else {

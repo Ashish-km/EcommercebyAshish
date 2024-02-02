@@ -39,7 +39,7 @@ export class AdminDashboardComponent implements OnInit {
   //in this fuction we willl at service section and call the function and get the userdata form json file 
 
   adminUserDashboardData() {
-    this.adminService.userDashbordData().subscribe(data => {
+    this.adminService.userDashboardData().subscribe(data => {
       this.user_dashboard_data = data;
       console.log(this.user_dashboard_data)
       for (let user in this.user_dashboard_data) {
