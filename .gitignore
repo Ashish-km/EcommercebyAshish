@@ -1,0 +1,25 @@
+# Node.js
+/node_modules/
+
+# Build files
+/dist/
+/build/
+/public/build/
+
+# Laravel
+/vendor/
+/storage/
+/public/storage/
+.env
+
+# IDE files
+/.idea/
+.vscode/
+
+# Logs and caches
+/logs/
+.cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
