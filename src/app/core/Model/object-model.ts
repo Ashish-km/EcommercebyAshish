@@ -15,8 +15,8 @@ export class User {
 }
 export class Address {
     id!: number;
-    addLine1!: string;
-    addLine2!: string;
+    addline1!: string;
+    addline2!: string;
     city!: string;
     state!: string;
     zipCode!: number;

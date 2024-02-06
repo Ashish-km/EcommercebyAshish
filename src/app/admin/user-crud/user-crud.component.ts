@@ -62,7 +62,6 @@
       return this.addEditUserForm.controls;
     }
     addUserPopup() {
-      debugger;
       this.edit_user = true;
       this.add_user = true;
       this.popup_header = "Add new USer";
@@ -70,7 +69,6 @@
     }
     addUser(){
       this.addEditUser = true;
-      debugger;
       if (this.addEditUserForm.invalid) {
         alert("Error!! :-\n\n " + JSON.stringify(this.addEditUserForm.value));
         return;
@@ -85,8 +83,8 @@
         gender: this.user_reg_data.gender,
         address: {
           id: 0,
-          addLine1: this.user_reg_data.addline1,
-          addLine2: this.user_reg_data.addline2,
+          addline1: this.user_reg_data.addline1,
+          addline2: this.user_reg_data.addline2,
           city: this.user_reg_data.city,
           state: this.user_reg_data.state,
           zipCode: this.user_reg_data.zipCode,
@@ -107,6 +105,8 @@
     }
 
     editUserPopup(user_id: any) {
+      
+      debugger;
       this.edit_user_id = user_id;
       this.edit_user = true;
       this.add_user = false;
@@ -123,11 +123,11 @@
           password: this.single_user_data.password,
           language: this.single_user_data.language,
           gender: this.single_user_data.gender,
-          addLine1: this.single_user_data.addline1,
-          addLine2: this.single_user_data.addline2,
-          city: this.single_user_data.city,
-          state: this.single_user_data.state,
-          zipCode: this.single_user_data.zipCode,
+          addline1: this.single_user_data.address.addline1,
+          addline2: this.single_user_data.address.addline2,
+          city: this.single_user_data.address.city,
+          state: this.single_user_data.address.state,
+          zipCode: this.single_user_data.address.zipCode,
           aboutYou: this.single_user_data.aboutYou,
           uploadPhoto: '',
           agreetc: this.single_user_data.agreetc,
@@ -155,8 +155,8 @@
         gender: this.user_reg_data.gender,
         address: {
           id: 0,
-          addLine1: this.user_reg_data.addLine1,
-          addLine2: this.user_reg_data.addLine2,
+          addline1: this.user_reg_data.addlne1,
+          addline2: this.user_reg_data.addline2,
           city: this.user_reg_data.city,
           state: this.user_reg_data.state,
           zipCode: this.user_reg_data.zipCode,

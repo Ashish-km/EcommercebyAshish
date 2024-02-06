@@ -75,8 +75,8 @@ export class SigninSignupComponent {
       gender: this.user_reg_data.gender,
       address: {
         id: 0,
-        addLine1: this.user_reg_data.addLine1,
-        addLine2: this.user_reg_data.addLine2,
+        addline1: this.user_reg_data.addline1,
+        addline2: this.user_reg_data.addline2,
         city: this.user_reg_data.city,
         state: this.user_reg_data.state,
         zipCode: this.user_reg_data.zipCode,

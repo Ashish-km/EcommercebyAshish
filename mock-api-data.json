@@ -81,8 +81,8 @@
       "gender": "Male",
       "address": {
         "id": 0,
-        "addLine1": "bhopal",
-        "addLine2": "bhopal",
+        "addline1": "bhopal",
+        "addline2": "bhopal",
         "city": "bhopal",
         "state": "mp",
         "zipCode": "453002"
@@ -151,8 +151,8 @@
       },
       "deliveryAddress": {
         "id": 0,
-        "addLine1": "Marathalli",
-        "addLine2": "Aswathnagar",
+        "addline1": "Marathalli",
+        "addline2": "Aswathnagar",
         "city": "Bangalore",
         "state": "Karnataka",
         "zipCode": "560037"
@@ -175,8 +175,8 @@
       },
       "deliveryAddress": {
         "id": 1,
-        "addLine1": "JP Nagar",
-        "addLine2": "Phase 5",
+        "addline1": "JP Nagar",
+        "addline2": "Phase 5",
         "city": "Bangalore",
         "state": "Karnataka",
         "zipCode": "560078"

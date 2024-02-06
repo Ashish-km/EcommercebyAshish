@@ -25,7 +25,7 @@ export class AdminService {
    }
    //gte dats form individual suer
    singleUser(user_id:any){
-    return this.apiService.get(this.user_url, user_id)
+    return this.apiService.get(this.user_url+user_id)
    }
    //update data for individual user
      editUser(user_id:any,user_dto:any):Observable <any> {

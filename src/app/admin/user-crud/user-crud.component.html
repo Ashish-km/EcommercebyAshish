@@ -24,13 +24,14 @@
     <tbody>
         <tr *ngFor="let user_data of all_user_data; let i=index">
             <th scope="row">{{i+1}}</th>
+            <th scope="row">{{i+1}}</th>
             <td>{{user_data.name}}</td>
             <td>{{user_data.mobNumber}} </td>
             <td>{{user_data.email}}</td>
             <td>{{user_data.dob}}</td>
             <td>{{user_data.city}}</td>
             <td>{{user_data.role}}</td>
-            <td><span class="sim-pointer" (click)="editUserPopup(user_data.id)" data-bs-toggel="modal"
+            <td><span class="sim-pointer" (click)="editUserPopup(user_data.id)" data-bs-toggle="modal"
                     data-bs-target="#addEditUserModal">Edit</span> &nbsp; &nbsp;
                
                     <span class="sim-pointer" (click)="deleteUser(user_data.id)">Delete
