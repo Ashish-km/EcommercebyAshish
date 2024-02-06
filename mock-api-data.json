@@ -1,7 +1,7 @@
 {
   "user": [
     {
-      "id":"1",
+      "id": "1",
       "name": "Ashish Mishra",
       "mobNumber": "1234567891",
       "age": 29,
@@ -39,7 +39,7 @@
         "state": "...",
         "zipCode": "453001"
       },
-      "language": [ 
+      "language": [
         "Hindi"
       ],
       "mobNumber": "+916263383827",
@@ -70,6 +70,31 @@
       "password": "1234567",
       "uploadPhoto": "C:\\fakepath\\Screenshot 2024-01-25 164653.png",
       "role": "buyer"
+    },
+    {
+      "id": "0a97",
+      "aboutYou": "nothing",
+      "age": 15,
+      "agreetc": true,
+      "dob": "2024-02-22",
+      "email": "ayush@gamil.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addLine1": "bhopal",
+        "addLine2": "bhopal",
+        "city": "bhopal",
+        "state": "mp",
+        "zipCode": "453002"
+      },
+      "language": [
+        "Odia"
+      ],
+      "mobNumber": "5545645654",
+      "name": "ayush",
+      "password": "6543212",
+      "uploadPhoto": "C:\\fakepath\\790ef5cf-47a8-45e8-b264-8c12390cee8d.png",
+      "role": "seller"
     }
   ],
   "product": [
