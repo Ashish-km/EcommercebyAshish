@@ -4,7 +4,7 @@
   import { Router } from '@angular/router';
   import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
   import { AdminService } from '../services/admin.service';
-  declare var JQuery: any;
+  declare var $: any;
 
   @Component({
     selector: 'app-user-crud',
@@ -97,16 +97,16 @@
         role: this.user_reg_data.role,
       }
       this.adminservice.addUser(this.user_dto).subscribe(data => {
+        this.addEditUserForm.reset();
         this.getAllUser();
-        JQuery('#addEditModal').modal('toggle');
+
+        $('#addEditModal').modal('toggle');
       }, error => {
         console.log("my worng", error);
       })
     }
 
     editUserPopup(user_id: any) {
-      
-      debugger;
       this.edit_user_id = user_id;
       this.edit_user = true;
       this.add_user = false;
@@ -169,8 +169,9 @@
         role: this.user_reg_data.role,
       }
       this.adminservice.editUser(this.edit_user_id,this.user_dto).subscribe(data => {
+        this.addEditUserForm.reset();
         this.getAllUser();
-        JQuery('#addEditModal').modal('toggle');
+      $('#addEditModal').modal('toggle');
       }, error => {
         console.log("my worng", error);
       })

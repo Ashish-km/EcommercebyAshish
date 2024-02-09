@@ -26,74 +26,77 @@
       "role": "admin"
     },
     {
-      "id": "ffcb",
-      "aboutYou": "qwe q qweqweqw  ",
-      "age": 12,
+      "id": "43c1",
+      "aboutYou": "a",
+      "age": 45,
       "agreetc": true,
-      "dob": "2024-01-19",
-      "email": "ashishkushwah888@gmail.com",
+      "dob": "2024-02-15",
+      "email": "ashish@gmail.com",
       "gender": "Male",
       "address": {
         "id": 0,
-        "city": "indore",
+        "addline1": "indore",
+        "addline2": "harda",
+        "city": "bhopal",
         "state": "...",
         "zipCode": "453001"
       },
       "language": [
         "Hindi"
       ],
-      "mobNumber": "+916263383827",
-      "name": "Ashish Kushwah",
+      "mobNumber": "626338387",
+      "name": "ashish",
       "password": "123456",
-      "uploadPhoto": "C:\\fakepath\\Screenshot 2024-01-25 234844.png",
+      "uploadPhoto": "C:\\fakepath\\doctorbg.png",
       "role": "seller"
     },
     {
-      "id": "33ab",
-      "aboutYou": "hgjkasgdkj asshdjkgajskdhk\n",
-      "age": 12,
+      "aboutYou": "I AM ASSHUI",
+      "age": 45,
       "agreetc": true,
-      "dob": "2002-05-04",
-      "email": "shivani@gmail.com",
-      "gender": "Female",
-      "address": {
-        "id": 0,
-        "city": "betma ",
-        "state": "...",
-        "zipCode": "4646464"
-      },
-      "language": [
-        "English"
-      ],
-      "mobNumber": "64645646",
-      "name": "shivani",
-      "password": "1234567",
-      "uploadPhoto": "C:\\fakepath\\Screenshot 2024-01-25 164653.png",
-      "role": "buyer"
-    },
-    {
-      "id": "0a97",
-      "aboutYou": "nothing",
-      "age": 15,
-      "agreetc": true,
-      "dob": "2024-02-22",
-      "email": "ayush@gamil.com",
+      "dob": "4541-04-05",
+      "email": "asshu@gmail.com",
       "gender": "Male",
       "address": {
         "id": 0,
-        "addline1": "bhopal",
-        "addline2": "bhopal",
-        "city": "bhopal",
-        "state": "mp",
-        "zipCode": "453002"
+        "addline2": "545aadaa",
+        "city": "indore",
+        "state": "up",
+        "zipCode": "453001"
       },
       "language": [
-        "Odia"
+        "Telugu"
       ],
-      "mobNumber": "5545645654",
-      "name": "ayush",
-      "password": "6543212",
-      "uploadPhoto": "C:\\fakepath\\790ef5cf-47a8-45e8-b264-8c12390cee8d.png",
+      "mobNumber": "545645454",
+      "name": "asshu",
+      "password": "789456",
+      "uploadPhoto": "C:\\fakepath\\doctorbg.png",
+      "role": "seller",
+      "id": "7b8e"
+    },
+    {
+      "id": "f084",
+      "aboutYou": "asdasdasd",
+      "age": 41,
+      "agreetc": true,
+      "dob": "2002-05-04",
+      "email": "kanha@gamial.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addline1": "454554",
+        "addline2": "345454",
+        "city": "harda",
+        "state": "mp",
+        "zipCode": "31215"
+      },
+      "language": [
+        "Telugu"
+      ],
+      "mobNumber": "4546564",
+      "name": "ganesh",
+      "password": "654321",
+      "uploadPhoto": "C:\\fakepath\\doctorbg.png",
       "role": "seller"
     }
   ],

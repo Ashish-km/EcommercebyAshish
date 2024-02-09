@@ -28,7 +28,7 @@
                 <td>{{user_data.mobNumber}} </td>
                 <td>{{user_data.email}}</td>
                 <td>{{user_data.dob}}</td>
-                <td>{{user_data.city}}</td>
+                <td>{{user_data.address.city}}</td>
                 <td>{{user_data.role}}</td>
                 <td><span class="sim-pointer" (click)="editUserPopup(user_data.id)" data-bs-toggle="modal"
                         data-bs-target="#addEditUserModal">Edit</span> &nbsp; &nbsp;
@@ -157,9 +157,9 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary" (click)="addUser()"
+                                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" (click)="addUser()"
                                         *ngIf="add_user">Register</button>
-                                    <button type="submit" class="btn btn-primary" (click)="updateUser()"
+                                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" (click)="updateUser()"
                                         *ngIf="edit_user">Update</button>
                                 </div>
                             </form>
