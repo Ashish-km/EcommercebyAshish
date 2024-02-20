@@ -11,7 +11,7 @@ import { User } from '../../core/Model/object-model';
   styleUrl: './user-crud.component.scss'
 })
 export class UserCrudComponent {
- 
+
    all_user_data:any;
    single_user_data:any;
    addEditUserForm!:FormGroup;
@@ -20,8 +20,5 @@ export class UserCrudComponent {
   edit_user_id:any;
   upload_file_name!:string;
   adddEditUser:boolean=false;
-  
-
-
 
 }
