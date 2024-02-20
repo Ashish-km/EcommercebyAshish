@@ -15,8 +15,8 @@ export class User {
 }
 export class Address {
     id!: number;
-    addLine1!: string;
-    addLine2!: string;
+    addline1!: string;
+    addline2!: string;
     city!: string;
     state!: string;
     zipCode!: number;
@@ -31,7 +31,7 @@ export class Product {
     dp!: number;
     status!: boolean;
 }
-export class order {
+export class Order {
     id!: number;
     UserId!: number;
     sellerId!: number;
