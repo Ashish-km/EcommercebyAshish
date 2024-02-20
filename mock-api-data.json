@@ -122,44 +122,47 @@
       "role": "buyer"
     }
   ],
-  "product": [
-    {
-      "id": "13",
-      "name": "TIZUM Aluminium Portable Stand",
-      "uploadPhoto": "https://rukminimi.flixcart.com/image/832/832/jx@prbk0/mobile-holder",
-      "productDesc": "The aluminium material used in the stand makes it sturdy and strong.",
-      "mrp": 300,
-      "dp": 199,
-      "status": "draft"
-    },
-    {
-      "id": "14",
-      "name": "Adjustable Laptop Stand",
-      "uploadPhoto": "https://example.com/image/laptop-stand",
-      "productDesc": "Ergonomically designed adjustable laptop stand for comfortable usage.",
-      "mrp": 500,
-      "dp": 399,
-      "status": "inactive"
-    },
-    {
-      "id": "15",
-      "name": "Wireless Charging Pad",
-      "uploadPhoto": "https://example.com/image/wireless-charging-pad",
-      "productDesc": "Qi-compatible wireless charging pad for convenient device charging.",
-      "mrp": 250,
-      "dp": 199,
-      "status": "publish"
-    },
-    {
-      "id": "16",
-      "name": "Bluetooth Earbuds",
-      "uploadPhoto": "https://example.com/image/bluetooth-earbuds",
-      "productDesc": "High-quality wireless Bluetooth earbuds with noise cancellation feature.",
-      "mrp": 120,
-      "dp": 99,
-      "status": "active"
-    }
-  ],
+
+    "products": [
+      {
+        "id": "13",
+        "name": "TIZUM Aluminium Portable Stand",
+        "uploadPhoto": "https://rukminimi.flixcart.com/image/832/832/jx@prbk0/mobile-holder",
+        "productDesc": "The aluminium material used in the stand makes it sturdy and strong.",
+        "mrp": 300,
+        "dp": 199,
+        "status": "draft"
+      },
+      {
+        "id": "14",
+        "name": "Adjustable Laptop Stand",
+        "uploadPhoto": "https://example.com/image/laptop-stand",
+        "productDesc": "Ergonomically designed adjustable laptop stand for comfortable usage.",
+        "mrp": 500,
+        "dp": 399,
+        "status": "inactive"
+      },
+      {
+        "id": "15",
+        "name": "Wireless Charging Pad",
+        "uploadPhoto": "https://example.com/image/wireless-charging-pad",
+        "productDesc": "Qi-compatible wireless charging pad for convenient device charging.",
+        "mrp": 250,
+        "dp": 199,
+        "status": "publish"
+      },
+      {
+        "id": "16",
+        "name": "Bluetooth Earbuds",
+        "uploadPhoto": "https://example.com/image/bluetooth-earbuds",
+        "productDesc": "High-quality wireless Bluetooth earbuds with noise cancellation feature.",
+        "mrp": 120,
+        "dp": 99,
+        "status": "active"
+      }
+    ],
+
+
   "orders": [
     {
       "id": "1",

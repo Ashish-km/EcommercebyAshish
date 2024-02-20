@@ -11,7 +11,7 @@ export class CoustomerService {
   private single_product_id = new BehaviorSubject(null);
   currentProduct = this.single_product_id.asObservable();
   public user_url = "http://localhost:3000/user/"
-  public product_url = "http://localhost:3000/product/"
+  public product_url = "http://localhost:3000/products/"
   public order_url = "http://localhost:3000/orders/"
 
   constructor(private apiService: ApiService) { }
@@ -30,7 +30,7 @@ export class CoustomerService {
   insertNewOrder(order_dto: any): Observable<any> {
     return this.apiService.post(this.order_url, order_dto);
   }
-  //kon kon order ka₹ cuke hai  uske leye 
+  //kon kon order ka₹ cuke hai  uske leye
   orderDashboardData(): Observable<any> {
     return this.apiService.get(this.order_url);
   }

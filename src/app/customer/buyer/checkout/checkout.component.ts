@@ -30,8 +30,9 @@ export class CheckoutComponent implements OnInit {
     this.userAddress = this.user_id;
   }
 
-  // product detail capture 
+  // product detail capture
   productDetail(single_product_id: any) {
+    debugger;
     this.coustomerService.individualProduct(single_product_id).subscribe(data => {
       this.individual_product = data;
       console.warn("my single product", this.individual_product)
@@ -65,7 +66,7 @@ export class CheckoutComponent implements OnInit {
 // },
 // deliveryAddress:{
 //   id:0,
- 
+
 // }
 
 
