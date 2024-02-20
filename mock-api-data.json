@@ -95,6 +95,31 @@
       "password": "654321",
       "uploadPhoto": "C:\\fakepath\\doctorbg.png",
       "role": "seller"
+    },
+    {
+      "id": "5374",
+      "aboutYou": "asdaskdhlkadh",
+      "age": 45,
+      "agreetc": true,
+      "dob": "4512-05-05",
+      "email": "ganesh@gmail.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addline1": "ghfgh",
+        "addline2": "nfsahf",
+        "city": "indore",
+        "state": "...",
+        "zipCode": "453001"
+      },
+      "language": [
+        "English"
+      ],
+      "mobNumber": "1315446",
+      "name": "ganesh",
+      "password": "123456",
+      "uploadPhoto": "C:\\fakepath\\doctorbg.png",
+      "role": "buyer"
     }
   ],
   "product": [

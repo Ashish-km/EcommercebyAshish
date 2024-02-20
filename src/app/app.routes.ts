@@ -8,7 +8,7 @@ import { UserCrudComponent } from './admin/user-crud/user-crud.component';
 import { ProductComponent } from './product/product.component';
 import { SigninSignupComponent } from './customer/signin-signup/signin-signup.component';
 import { SellerDashboardComponent } from './customer/seller/seller-dashboard/seller-dashboard.component';
-import { BuyerDashboardComponent } from './customer/buyer-dashboard/buyer-dashboard.component';
+import { BuyerDashboardComponent } from './customer/buyer/buyer-dashboard/buyer-dashboard.component';
 import { CheckoutComponent } from './customer/buyer/checkout/checkout.component';
 import { PageNoteFoundComponent } from './shared/layouts/page-note-found/page-note-found.component';
 import { AdminAuthGuardLogin, AdminAuthGuardServcie, BuyerAuthGuardServcie, SellerAuthGuardService, SellerBuyerAuthGuardLogin } from './shared/services/auth-guard.service';

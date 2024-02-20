@@ -31,7 +31,7 @@ export class Product {
     dp!: number;
     status!: boolean;
 }
-export class order {
+export class Order {
     id!: number;
     UserId!: number;
     sellerId!: number;
