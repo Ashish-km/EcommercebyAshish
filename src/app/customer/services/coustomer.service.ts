@@ -34,8 +34,7 @@ export class CoustomerService {
   orderDashboardData(): Observable<any> {
     return this.apiService.get(this.order_url);
   }
-
   productDashboardData(): Observable<any> {
-    return this.apiService.get(this.product_url);
+  return this.apiService.get(this.product_url);
   }
 }
