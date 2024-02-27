@@ -16,9 +16,7 @@
         "state": "Delhi",
         "zipCode": "110052"
       },
-      "language": [
-        "Hindi"
-      ],
+      "language": ["Hindi"],
       "gender": "Male",
       "aboutYou": "I am a programmer...",
       "uploadPhoto": "ashish.png",
@@ -38,9 +36,7 @@
         "state": "...",
         "zipCode": "453001"
       },
-      "language": [
-        "Hindi"
-      ],
+      "language": ["Hindi"],
       "mobNumber": "626338387",
       "name": "ashish",
       "password": "123456",
@@ -61,9 +57,7 @@
         "state": "up",
         "zipCode": "453001"
       },
-      "language": [
-        "Telugu"
-      ],
+      "language": ["Telugu"],
       "mobNumber": "545645454",
       "name": "asshu",
       "password": "789456",
@@ -87,9 +81,7 @@
         "state": "mp",
         "zipCode": "31215"
       },
-      "language": [
-        "Telugu"
-      ],
+      "language": ["Telugu"],
       "mobNumber": "4546564",
       "name": "ganesh",
       "password": "654321",
@@ -112,9 +104,7 @@
         "state": "...",
         "zipCode": "453001"
       },
-      "language": [
-        "English"
-      ],
+      "language": ["English"],
       "mobNumber": "1315446",
       "name": "ganesh",
       "password": "123456",
@@ -123,45 +113,46 @@
     }
   ],
 
-    "products": [
-      {
-        "id": "13",
-        "name": "TIZUM Aluminium Portable Stand",
-        "uploadPhoto": "https://rukminimi.flixcart.com/image/832/832/jx@prbk0/mobile-holder",
-        "productDesc": "The aluminium material used in the stand makes it sturdy and strong.",
-        "mrp": 300,
-        "dp": 199,
-        "status": "draft"
-      },
-      {
-        "id": "14",
-        "name": "Adjustable Laptop Stand",
-        "uploadPhoto": "https://example.com/image/laptop-stand",
-        "productDesc": "Ergonomically designed adjustable laptop stand for comfortable usage.",
-        "mrp": 500,
-        "dp": 399,
-        "status": "inactive"
-      },
-      {
-        "id": "15",
-        "name": "Wireless Charging Pad",
-        "uploadPhoto": "https://example.com/image/wireless-charging-pad",
-        "productDesc": "Qi-compatible wireless charging pad for convenient device charging.",
-        "mrp": 250,
-        "dp": 199,
-        "status": "publish"
-      },
-      {
-        "id": "16",
-        "name": "Bluetooth Earbuds",
-        "uploadPhoto": "https://example.com/image/bluetooth-earbuds",
-        "productDesc": "High-quality wireless Bluetooth earbuds with noise cancellation feature.",
-        "mrp": 120,
-        "dp": 99,
-        "status": "active"
-      }
-    ],
+  "products": [
+    {
+      "id": "13",
+      "name": "TIZUM Aluminium Portable Stand",
+      "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
+      "uploadDesc": "The aluminium material used in the stand makes it sturdy and strong.",
+      "mrp": 300,
+      "dp": 199,
+      "status": "draft"
+    },
+    {
+      "id": "14",
+      "name": "Adjustable Laptop Stand",
+      "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
+      "uploadDesc": "Ergonomically designed adjustable laptop stand for comfortable usage.",
+      "mrp": 500,
+      "dp": 399,
+      "status": "inactive"
+    },
+    {
+      "id": "15",
+      "name": "Wireless Charging Pad",
+      "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
 
+      "uploadDesc": "Qi-compatible wireless charging pad for convenient device charging.",
+      "mrp": 250,
+      "dp": 199,
+      "status": "publish"
+    },
+    {
+      "id": "16",
+      "name": "Bluetooth Earbuds",
+      "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
+
+      "uploadDesc": "High-quality wireless Bluetooth earbuds with noise cancellation feature.",
+      "mrp": 120,
+      "dp": 99,
+      "status": "active"
+    }
+  ],
 
   "orders": [
     {
@@ -171,8 +162,8 @@
       "product": {
         "id": "1",
         "name": "Polyester Door Curtain",
-        "uploadPhoto": "https://rukminiml.flixcart.com/image/832/832/jcf487k0/curtain/w/c",
-        "productDesc": "Transform the ambiance of your home with these elegant, crushed curtains.",
+        "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
+        "uploadDesc": "Transform the ambiance of your home with these elegant, crushed curtains.",
         "mrp": 1000,
         "dp": 499,
         "status": "publish"
@@ -195,8 +186,8 @@
       "product": {
         "id": "2",
         "name": "Stainless Steel Water Bottle",
-        "uploadPhoto": "https://example.com/image/water-bottle",
-        "productDesc": "Durable stainless steel water bottle for everyday use.",
+        "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
+        "uploadDesc": "Durable stainless steel water bottle for everyday use.",
         "mrp": 500,
         "dp": 299,
         "status": "publish"

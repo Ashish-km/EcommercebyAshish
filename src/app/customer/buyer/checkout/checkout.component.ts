@@ -32,10 +32,9 @@ export class CheckoutComponent implements OnInit {
 
   // product detail capture
   productDetail(single_product_id: any) {
-    debugger;
     this.coustomerService.individualProduct(single_product_id).subscribe(data => {
       this.individual_product = data;
-      console.warn("my single product", this.individual_product)
+      console.warn("my single Product", this.individual_product)
     }, error => {
       console.log("my error", error)
     })
@@ -50,24 +49,39 @@ export class CheckoutComponent implements OnInit {
   }
 
 
-//   placeOrder(){
-//     this.order_dto={
-//     id:0,
-//     userId:this.user_id,
-//     sellerId:2,
-//     product : {
-//     id : this. individual_product.id,
-//     name: this. individual_product.name ,
-//     uploadPhoto : this. individual_product.uploadPhoto,
-//     uploadDesc : this. individual_product.uploadDesc,
-//     mrp:this.individual_product.mrp,
-//     dp:this.individual_product.dp,
-//     status : this. individual_product. status
-// },
-// deliveryAddress:{
-//   id:0,
+  placeOrder() {
+    this.order_dto = {
+      id: 0,
+      UserId : this.user_id,
+      sellerId: 2,
+      product: {
+        id: this.individual_product.id,
+        name: this.individual_product.name,
+        uploadPhoto: this.individual_product.uploadPhoto,
+        uploadDesc: this.individual_product.uploadDesc,
+        mrp: this.individual_product.mrp,
+        dp: this.individual_product.dp,
+        status: this.individual_product.status
+      },
+      deliveryAddress: {
+        id: 0,
+        addline1: this.user_address.addline1,
+        addline2: this.user_address.addline2,
+        city: this.user_address.city,
+        state: this.user_address.state,
+        zipCode: this.user_address.zipCode
+      },
+      contact:this.user_contact_no,
+      dateTime:new Date().toLocaleDateString()
 
-// }
-
+    }
+    console.log("place order Dtl",this.order_dto);
+    this.coustomerService.insertNewOrder(this.order_dto).subscribe(data=>{
+      alert("youer order place success");
+      this.router.navigateByUrl("/buyer-dashboard");
+    },error=>{
+      console.log("order error",error)
+    })
+  }
 
 }

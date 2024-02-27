@@ -15,7 +15,7 @@ export class BuyerDashboardComponent implements OnInit{
   show_Checkout:boolean=false;
 
 
-constructor(private router:Router, private coustomerService:CoustomerService,){
+constructor(private router:Router, public coustomerService:CoustomerService,){
 }
 ngOnInit(): void {
  this.getAllProduct()
@@ -35,6 +35,6 @@ buyProduct(id:number){
 
 }
 addToCart(){
-  alert("thisis Showcase")
+  alert("this is Showcase")
 }
 }
