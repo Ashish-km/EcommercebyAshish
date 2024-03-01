@@ -27,7 +27,7 @@ export class CheckoutComponent implements OnInit {
     this.coustomerService.currentProduct.subscribe(product => this.single_product_id = product);
     this.user_id = Number(sessionStorage.getItem('user_session_id'));
     this.productDetail(this.single_product_id);
-    this.userAddress = this.user_id;
+    this.userAddress(this.user_id);
   }
 
   // product detail capture
@@ -63,8 +63,9 @@ export class CheckoutComponent implements OnInit {
         dp: this.individual_product.dp,
         status: this.individual_product.status
       },
+      
       deliveryAddress: {
-        id: 0,
+        id: 0,    
         addline1: this.user_address.addline1,
         addline2: this.user_address.addline2,
         city: this.user_address.city,

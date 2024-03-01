@@ -1,44 +1,68 @@
 <p>checkout works!</p>
- <h2 class> you click on :{{single_product_id}}</h2>
+<h2 class>you click on :{{ single_product_id }}</h2>
 
-
- <nav aria-label="breadcrumb">
+<nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-    <li class="breadcrumb-item"> <a routerLink="/buyer-dashboard" >buyer</a></li>
-    <li class="breadcrumb-item"><a >checkout</a></li>
+        <li class="breadcrumb-item"><a routerLink="/buyer-dashboard">buyer</a></li>
+        <li class="breadcrumb-item"><a>checkout</a></li>
     </ol>
- </nav>
+</nav>
 
- <div class="row">
-     <div class="col-md-8">
-       <div class="card">
-        <div class="card-header">
-            Product detail
-        </div>
-        <div class="card-body product-detail">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="{{individual_product.uploadPhoto}}" class="card-img-top" alt="{{individual_product.name}}">
-                </div>
-                <div class="col-md-8">
-                    <h4 class="text-bold card-title">
-                        {{individual_product.name}}
-                    </h4><br>
-                    <p class="carr-text product-desc">{{individual_product.uploadDesc}}</p>   
-                    <p><span class="float-left"><strong>
-                        MRP : 
-                    </strong> <del>
-                        {{individual_product.mrp}}
-                    </del></span>
-                    <span class="float-left"><strong>
-                    Dp : 
-                    </strong> <del>
-                        {{individual_product.dp}}
-                    </del></span></p>
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">Product detail</div>
+            <div class="card-body product-detail">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ individual_product.uploadPhoto }}" class="card-img-top"
+                            alt="{{ individual_product.name }}" />
+                    </div>
+                    <div class="col-md-8">
+                        <h4 class="text-bold card-title">
+                            {{ individual_product.name }}
+                        </h4>
+                        <br />
+                        <p class="carr-text product-desc">
+                            {{ individual_product.uploadDesc }}
+                        </p>
+                        <p>
+                            <span class="float-left"><strong> MRP : </strong>
+                                <del>
+                                    {{ individual_product.mrp }}
+                                </del></span>
+                            <span class="float-left"><strong> Dp : </strong>
+                                <del>
+                                    {{ individual_product.dp }}
+                                </del></span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-       </div>         
     </div>
-    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">Address Detail</div>
+            <div class="card-body">
+                <h5 class="card-title text-bold">{{ user_address.name }}</h5>
+                <p class="card-text">
+                    {{ user_address.addline1 }} , {{ user_address.addline2 }}
+                </p>
+                <p class="card-text">
+                    {{ user_address.city }},{{ user_address.state }}
+                </p>
+                <p class="card-text">Postal Code: {{ user_address.Zipcode }}</p>
+                <p class="card-text">Conatct Number: {{ user_contact_no }}</p>
+                <a class="btn btn-primary" (click)="placeOrder()">deliver Here </a>
+                <div class="alert alert-info" role="alert">
+                    <strong>Note:</strong>
+                    we are not giving multiple address adtion , if you want to delever in
+                    difrent address fornw change the address in
+                    <span routerLink="/my-profile" class="text-info sim-pointer">My Profile</span>
+                    section
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
