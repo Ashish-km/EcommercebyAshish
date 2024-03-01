@@ -16,9 +16,7 @@
         "state": "Delhi",
         "zipCode": "110052"
       },
-      "language": [
-        "Hindi"
-      ],
+      "language": ["Hindi"],
       "gender": "Male",
       "aboutYou": "I am a programmer...",
       "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
@@ -38,9 +36,7 @@
         "state": "...",
         "zipCode": "453001"
       },
-      "language": [
-        "Hindi"
-      ],
+      "language": ["Hindi"],
       "mobNumber": "626338387",
       "name": "ashish",
       "password": "123456",
@@ -61,9 +57,7 @@
         "state": "up",
         "zipCode": "453001"
       },
-      "language": [
-        "Telugu"
-      ],
+      "language": ["Telugu"],
       "mobNumber": "545645454",
       "name": "asshu",
       "password": "789456",
@@ -87,9 +81,7 @@
         "state": "mp",
         "zipCode": "31215"
       },
-      "language": [
-        "Telugu"
-      ],
+      "language": ["Telugu"],
       "mobNumber": "4546564",
       "name": "ganesh",
       "password": "654321",
@@ -112,9 +104,7 @@
         "state": "...",
         "zipCode": "453001"
       },
-      "language": [
-        "English"
-      ],
+      "language": ["English"],
       "mobNumber": "1315446",
       "name": "ganesh",
       "password": "123456",
@@ -122,6 +112,7 @@
       "role": "buyer"
     }
   ],
+
   "products": [
     {
       "id": "13",
@@ -154,12 +145,14 @@
       "id": "16",
       "name": "Bluetooth Earbuds",
       "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
+
       "uploadDesc": "High-quality wireless Bluetooth earbuds with noise cancellation feature.",
       "mrp": 120,
       "dp": 99,
       "status": "active"
     }
   ],
+
   "orders": [
     {
       "id": "1",
@@ -208,54 +201,6 @@
       },
       "contact": "08098765432",
       "dateTime": "20/07/2019"
-    },
-    {
-      "id": 0,
-      "UserId": 5374,
-      "sellerId": 2,
-      "product": {
-        "id": "13",
-        "name": "TIZUM Aluminium Portable Stand",
-        "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
-        "uploadDesc": "The aluminium material used in the stand makes it sturdy and strong.",
-        "mrp": 300,
-        "dp": 199,
-        "status": "draft"
-      },
-      "deliveryAddress": {
-        "id": 0,
-        "addline1": "ghfgh",
-        "addline2": "nfsahf",
-        "city": "indore",
-        "state": "...",
-        "zipCode": "453001"
-      },
-      "contact": "1315446",
-      "dateTime": "3/1/2024"
-    },
-    {
-      "id": 0,
-      "UserId": 5374,
-      "sellerId": 2,
-      "product": {
-        "id": "13",
-        "name": "TIZUM Aluminium Portable Stand",
-        "uploadPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ffg4OtfopXDAsB4TAa5WoM6sN7sM72dQUg&usqp=CAU",
-        "uploadDesc": "The aluminium material used in the stand makes it sturdy and strong.",
-        "mrp": 300,
-        "dp": 199,
-        "status": "draft"
-      },
-      "deliveryAddress": {
-        "id": 0,
-        "addline1": "ghfgh",
-        "addline2": "nfsahf",
-        "city": "indore",
-        "state": "...",
-        "zipCode": "453001"
-      },
-      "contact": "1315446",
-      "dateTime": "3/1/2024"
     }
   ]
 }
