@@ -29,6 +29,7 @@ export class SellerDashboardComponent implements OnInit {
     this.sellerProductDashboardData();
   }
 
+
   sellerProdctDashboard(){
     this.router.navigateByUrl("/seller/product")
   }

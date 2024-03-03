@@ -1,1 +1,20 @@
 <p>seller-dashboard works!</p>
+<div class="jumbotron p-4 p-md-4 text-white rounded bg-dark">
+  <div class="col-md-12 px-0">
+    <h3 class="display-4 font-italic">
+      Welcome to Seller Dashboard
+    </h3>
+    <p class="lead mb-0">Seller can manage product and order details</p>
+  </div>
+</div>
+<div class="row mb-2">
+  <div class="col-md-6" (click)="sellerOrderDashboard()">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">Order</strong>
+        <h3 class="mb-0">Manage Order</h3>
+        <div class="mb-1 text-muted">Last Order Date: <strong>{{last_order_date}}</strong></div>
+        </div>
+    </div>
+  </div>
+</div>
