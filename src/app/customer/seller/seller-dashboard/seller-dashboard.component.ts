@@ -25,9 +25,12 @@ export class SellerDashboardComponent implements OnInit {
   constructor(private coustomerService: CoustomerService, private router: Router) {
   }
   ngOnInit(): void {
+    this.sellerOrderDashboardData();
+    this.sellerProductDashboardData();
   }
 
-  selllerProdctDashboard(){
+
+  sellerProdctDashboard(){
     this.router.navigateByUrl("/seller/product")
   }
   sellerOrderDashboard(){
@@ -45,10 +48,11 @@ export class SellerDashboardComponent implements OnInit {
     })
   }
 
-  sellerPrductDashboardData(){
+  sellerProductDashboardData(){
     this.coustomerService.productDashboardData().subscribe(data=>{
       this.Product_dashboard_data=data;
       for(status in this.Product_dashboard_data){
+        console.log(this.Product_dashboard_data)
         if(this.Product_dashboard_data[status].status=='publish'){
           ++this.publish_product;
         }
@@ -60,6 +64,8 @@ export class SellerDashboardComponent implements OnInit {
         }
         ++this.tatal_poduct;
       }
+    },error=>{
+      console.log("My error",error)
     })
   }
 }
