@@ -17,7 +17,7 @@ export class SellerDashboardComponent implements OnInit {
   total_order: any;
   last_order_date: any;
   Product_dashboard_data: any;
-  tatal_poduct: number = 0;
+  total_product: number = 0;
   publish_product: number = 0;
   inactive_product: number = 0;
   draft_product: number = 0
@@ -30,7 +30,7 @@ export class SellerDashboardComponent implements OnInit {
   }
 
 
-  sellerProdctDashboard(){
+  sellerProductDashboard(){
     this.router.navigateByUrl("/seller/product")
   }
   sellerOrderDashboard(){
@@ -62,7 +62,7 @@ export class SellerDashboardComponent implements OnInit {
         else if(this.Product_dashboard_data[status].status=='draft'){
           ++this.draft_product
         }
-        ++this.tatal_poduct;
+        ++this.total_product;
       }
     },error=>{
       console.log("My error",error)
