@@ -7,21 +7,20 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  public product_url = "http://localhost:3000/products/";
-  constructor(private httpClient: HttpClient, private apiService: ApiService) {
+  public product_url=" http://localhost:3000/products/"
 
-  }
-  allProduct(): Observable<any> {
+  constructor(private httpClient:HttpClient, private apiService:ApiService) { }
+  allProduct():Observable<any>{
     return this.apiService.get(this.product_url);
   }
-  addNewProduct(producy_dto: any): Observable<any> {
-    return this.apiService.post(this.product_url, producy_dto);
+  addNewProduct(product_dto:any):Observable<any>{
+    return this.apiService.post(this.product_url, product_dto);
   }
-  singleProduct(id: any) {
-    return this.apiService.get(this.product_url + id);
+  singleProduct(id:any){
+    return this.apiService.get(this.product_url+id);
   }
-  updateProduct(id:any ,product_dto:any):Observable<any>{
-return this.apiService.put(this.product_url+id,product_dto);
+  updateProduct(id:any, product_dto:any):Observable<any>{
+    return this.apiService.put(this.product_url+id, product_dto);
   }
   deleteProduct(id:any):Observable<any>{
     return this.apiService.delete(this.product_url+id);

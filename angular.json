@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angulareccomerce": {
+    "angularecommerce": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,25 +13,22 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angulareccomerce",
+            "outputPath": "dist/angularecommerce",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
               "node_modules/ngx-toastr/toastr.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css" 
+              "src/styles.css"
             ],
-            "scripts": [ "./node_modules/jquery/dist/jquery.min.js",
-            "./node_modules/bootstrap/dist/js/bootstrap.min.js"]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -65,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angulareccomerce:build:production"
+              "buildTarget": "angularecommerce:build:production"
             },
             "development": {
-              "buildTarget": "angulareccomerce:build:development"
+              "buildTarget": "angularecommerce:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angulareccomerce:build"
+            "buildTarget": "angularecommerce:build"
           }
         },
         "test": {
@@ -87,21 +80,17 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }

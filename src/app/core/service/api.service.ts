@@ -1,38 +1,32 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { Observable, catchError, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  httpOptions = {
+  httpOptions ={
     headers: new HttpHeaders({
-      // You generally don't need to set Content-Type explicitly for JSON requests
-       'Content-Type': 'application/json',
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin":"*"
     })
-  };
-
-  constructor(private http: HttpClient) {}
-
-  private formatErrors(error: any) {
-    return throwError(error.error);
   }
+  constructor( private http:HttpClient) { }
 
-  get(path: string, params: HttpParams = new HttpParams()): Observable<any> {
-    return this.http.get(path, { params }).pipe(catchError(this.formatErrors));
+  private formatErrors(error:any){
+    return throwError(error.error)
   }
-
-  put(path: string, body: object = {}): Observable<any> {
-    return this.http.put(path, JSON.stringify(body), this.httpOptions).pipe(catchError(this.formatErrors));
+  get(path:string, params:HttpParams =new HttpParams()):Observable<any>{
+    return this.http.get(path,{params}).pipe(catchError(this.formatErrors))
   }
-
-  post(path: string, body: object = {}): Observable<any> {
-    return this.http.post(path, JSON.stringify(body), this.httpOptions).pipe(catchError(this.formatErrors));
+  put(path:string, body:Object ={}):Observable<any>{
+    return this.http.put(path,JSON.stringify(body), this.httpOptions).pipe(catchError(this.formatErrors))
   }
-
-  delete(path: string): Observable<any> {
-    return this.http.delete(path).pipe(catchError(this.formatErrors));
+  post(path:string, body:Object ={}):Observable<any>{
+    return this.http.post(path,JSON.stringify(body), this.httpOptions).pipe(catchError(this.formatErrors))
+  }
+  delete(path:string):Observable<any>{
+    return this.http.delete(path).pipe(catchError(this.formatErrors))
   }
 }
